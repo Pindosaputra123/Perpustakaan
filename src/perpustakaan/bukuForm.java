@@ -59,13 +59,13 @@ public class bukuForm extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         txtthn_terbit = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
-        tambahBuku = new javax.swing.JButton();
         updateBuku = new javax.swing.JButton();
+        tambahBuku = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(74, 209, 161));
+        jPanel1.setBackground(new java.awt.Color(153, 0, 51));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -89,18 +89,8 @@ public class bukuForm extends javax.swing.JFrame {
 
         jPanel2.setLayout(new java.awt.CardLayout());
 
-        tambahBuku.setBackground(new java.awt.Color(87, 101, 116));
-        tambahBuku.setForeground(new java.awt.Color(255, 255, 255));
-        tambahBuku.setText("Tambah Data");
-        tambahBuku.setBorderPainted(false);
-        tambahBuku.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tambahBukuActionPerformed(evt);
-            }
-        });
-        jPanel2.add(tambahBuku, "card3");
-
         updateBuku.setBackground(new java.awt.Color(87, 101, 116));
+        updateBuku.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         updateBuku.setForeground(new java.awt.Color(255, 255, 255));
         updateBuku.setText("Update Data");
         updateBuku.setBorderPainted(false);
@@ -111,6 +101,18 @@ public class bukuForm extends javax.swing.JFrame {
         });
         jPanel2.add(updateBuku, "card2");
 
+        tambahBuku.setBackground(new java.awt.Color(87, 101, 116));
+        tambahBuku.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        tambahBuku.setForeground(new java.awt.Color(255, 255, 255));
+        tambahBuku.setText("Tambah Data");
+        tambahBuku.setBorderPainted(false);
+        tambahBuku.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tambahBukuActionPerformed(evt);
+            }
+        });
+        jPanel2.add(tambahBuku, "card3");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -118,24 +120,26 @@ public class bukuForm extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(151, 151, 151)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(19, 19, 19)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtthn_terbit, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
-                            .addComponent(txtpengarang)
-                            .addComponent(txtpenerbit)
-                            .addComponent(txtjudul)
-                            .addComponent(txtkode_buku)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(151, 151, 151)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(115, Short.MAX_VALUE))
+                            .addComponent(jLabel8)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel9)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel5))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtthn_terbit)
+                                    .addComponent(txtpengarang)
+                                    .addComponent(txtkode_buku, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtjudul)
+                                    .addComponent(txtpenerbit))))))
+                .addGap(29, 29, 29))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -162,7 +166,7 @@ public class bukuForm extends javax.swing.JFrame {
                     .addComponent(jLabel9))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

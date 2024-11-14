@@ -65,7 +65,7 @@ CREATE TABLE `pegawai` (
 --
 
 INSERT INTO `pegawai` (`nip`, `id_users`, `nama_pegawai`) VALUES
-('1194055', 1, 'Muhammad Fahri Ramadhan');
+('123456789', 1, 'Pindo Saputra Harmanto');
 
 -- --------------------------------------------------------
 
@@ -100,7 +100,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3');
+(1, 'pindo', 'pindo');
 
 --
 -- Indexes for dumped tables
