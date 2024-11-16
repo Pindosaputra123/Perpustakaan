@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author Unknown
+ * @author Pindo
  */
 public class koneksi {
     private static Connection mysqlConfig;

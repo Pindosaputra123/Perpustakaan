@@ -65,13 +65,6 @@ public class mainMenu extends javax.swing.JFrame {
         mahasiswa = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
         tb_mahasiswa = new javax.swing.JTable();
-        credits = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         arsip = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         tb_arsip = new javax.swing.JTable();
@@ -244,7 +237,7 @@ public class mainMenu extends javax.swing.JFrame {
             }
         ));
         tb_buku.setGridColor(new java.awt.Color(240, 240, 240));
-        tb_buku.setSelectionBackground(new java.awt.Color(29, 209, 161));
+        tb_buku.setSelectionBackground(new java.awt.Color(153, 0, 51));
         jScrollPane2.setViewportView(tb_buku);
 
         buku.add(jScrollPane2);
@@ -267,7 +260,7 @@ public class mainMenu extends javax.swing.JFrame {
             }
         ));
         tb_pegawai.setGridColor(new java.awt.Color(240, 240, 240));
-        tb_pegawai.setSelectionBackground(new java.awt.Color(29, 209, 161));
+        tb_pegawai.setSelectionBackground(new java.awt.Color(153, 0, 51));
         jScrollPane3.setViewportView(tb_pegawai);
 
         pegawai.add(jScrollPane3);
@@ -290,78 +283,12 @@ public class mainMenu extends javax.swing.JFrame {
             }
         ));
         tb_mahasiswa.setGridColor(new java.awt.Color(240, 240, 240));
-        tb_mahasiswa.setSelectionBackground(new java.awt.Color(29, 209, 161));
+        tb_mahasiswa.setSelectionBackground(new java.awt.Color(153, 0, 51));
         jScrollPane4.setViewportView(tb_mahasiswa);
 
         mahasiswa.add(jScrollPane4);
 
         jPanel4.add(mahasiswa, "card2");
-
-        credits.setBackground(new java.awt.Color(87, 101, 116));
-        credits.setForeground(new java.awt.Color(255, 255, 255));
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Coder");
-
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Icon Pack");
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText(":");
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText(":");
-
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Material Design");
-
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Muhammad Fahri Ramadhan");
-
-        javax.swing.GroupLayout creditsLayout = new javax.swing.GroupLayout(credits);
-        credits.setLayout(creditsLayout);
-        creditsLayout.setHorizontalGroup(
-            creditsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(creditsLayout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addGroup(creditsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel4))
-                .addGap(18, 18, 18)
-                .addGroup(creditsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(creditsLayout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel9))
-                    .addGroup(creditsLayout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel8)))
-                .addContainerGap(522, Short.MAX_VALUE))
-        );
-        creditsLayout.setVerticalGroup(
-            creditsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(creditsLayout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addGroup(creditsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel9))
-                .addGap(18, 18, 18)
-                .addGroup(creditsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel8))
-                .addContainerGap(199, Short.MAX_VALUE))
-        );
-
-        jPanel4.add(credits, "card2");
 
         arsip.setBackground(new java.awt.Color(255, 255, 255));
         arsip.setLayout(new javax.swing.BoxLayout(arsip, javax.swing.BoxLayout.LINE_AXIS));
@@ -379,7 +306,7 @@ public class mainMenu extends javax.swing.JFrame {
             }
         ));
         tb_arsip.setGridColor(new java.awt.Color(240, 240, 240));
-        tb_arsip.setSelectionBackground(new java.awt.Color(29, 209, 161));
+        tb_arsip.setSelectionBackground(new java.awt.Color(153, 0, 51));
         jScrollPane5.setViewportView(tb_arsip);
 
         arsip.add(jScrollPane5);
@@ -842,7 +769,6 @@ public class mainMenu extends javax.swing.JFrame {
         buku.setVisible(false);
         mahasiswa.setVisible(false);
         pegawai.setVisible(false);
-        credits.setVisible(false);
         btn_done.setEnabled(true);
         btn_edit.setEnabled(true);
         btn_add.setEnabled(true);
@@ -855,7 +781,6 @@ public class mainMenu extends javax.swing.JFrame {
         pinjam.setVisible(false);
         mahasiswa.setVisible(false);
         pegawai.setVisible(false);
-        credits.setVisible(false);
         btn_done.setEnabled(false);
         btn_edit.setEnabled(true);
         btn_add.setEnabled(true);
@@ -868,7 +793,6 @@ public class mainMenu extends javax.swing.JFrame {
         pinjam.setVisible(false);
         buku.setVisible(false);
         pegawai.setVisible(false);
-        credits.setVisible(false);
         btn_done.setEnabled(false);
         btn_edit.setEnabled(true);
         btn_add.setEnabled(true);
@@ -881,7 +805,6 @@ public class mainMenu extends javax.swing.JFrame {
         pinjam.setVisible(false);
         mahasiswa.setVisible(false);
         buku.setVisible(false);
-        credits.setVisible(false);
         btn_done.setEnabled(false);
         btn_edit.setEnabled(true);
         btn_add.setEnabled(true);
@@ -894,7 +817,6 @@ public class mainMenu extends javax.swing.JFrame {
         pinjam.setVisible(false);
         buku.setVisible(false);
         pegawai.setVisible(false);
-        credits.setVisible(false);
         btn_done.setEnabled(false);
         btn_edit.setEnabled(false);
         btn_add.setEnabled(false);
@@ -914,7 +836,7 @@ public class mainMenu extends javax.swing.JFrame {
 
     private void btn_searchMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_searchMouseExited
         btn_search.setBackground(new java.awt.Color(87, 101, 116));
-        btn_search.setForeground(new java.awt.Color(74, 209, 161));
+        btn_search.setForeground(new java.awt.Color(255, 153, 153));
     }//GEN-LAST:event_btn_searchMouseExited
 
     private void btn_searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_searchActionPerformed
@@ -1054,29 +976,34 @@ public class mainMenu extends javax.swing.JFrame {
         model.addColumn("Tahun Terbit");
 
         try {
-            String sql = "Select * from buku where "
-                    + "kode_buku like '%" + cari + "%' "
-                    + "OR judul_buku like '%" + cari + "%' "
-                    + "OR penerbit like '%" + cari + "%' "
-                    + "OR pengarang like '%" + cari + "%' "
-                    + "OR thn_terbit like '%" + cari + "%' "
-                    + "order by kode_buku asc";
+            String sql = "SELECT * FROM buku WHERE "
+                    + "kode_buku LIKE '%" + cari + "%' "
+                    + "OR judul_buku LIKE '%" + cari + "%' "
+                    + "OR penerbit LIKE '%" + cari + "%' "
+                    + "OR pengarang LIKE '%" + cari + "%' "
+                    + "OR YEAR(thn_terbit) LIKE '%" + cari + "%' "
+                    + "ORDER BY kode_buku ASC";
+
             java.sql.Connection conn = (Connection) koneksi.configDB();
             java.sql.Statement stm = conn.createStatement();
             java.sql.ResultSet res = stm.executeQuery(sql);
+
             while (res.next()) {
                 String kode_buku = res.getString("kode_buku");
                 String judul_buku = res.getString("judul_buku");
                 String penerbit = res.getString("penerbit");
                 String pengarang = res.getString("pengarang");
-                String thn_terbit = res.getString("thn_terbit");
-                String[] searchResult = {kode_buku, judul_buku, penerbit, pengarang, thn_terbit};
+                int thn_terbit = res.getInt("thn_terbit"); // Ambil sebagai int
+                String[] searchResult = {kode_buku, judul_buku, penerbit, pengarang, String.valueOf(thn_terbit)};
                 model.addRow(searchResult);
             }
+
             tb_buku.setModel(model);
         } catch (Exception e) {
+            e.printStackTrace(); // Debug error
         }
     }
+
     
     private void search_mahasiswa() {
         String cari = search.getText();
@@ -1143,22 +1070,28 @@ public class mainMenu extends javax.swing.JFrame {
         model.addColumn("Tahun Terbit");
 
         try {
-            String sql = "select*from buku order by kode_buku asc";
+            String sql = "SELECT * FROM buku ORDER BY kode_buku ASC";
             java.sql.Connection conn = (Connection) koneksi.configDB();
             java.sql.Statement stm = conn.createStatement();
             java.sql.ResultSet res = stm.executeQuery(sql);
+
             while (res.next()) {
-                String date = res.getString(5);
-                java.sql.Date dat = java.sql.Date.valueOf(date);
-                Calendar cal = Calendar.getInstance();
-                cal.setTime(dat);
-                int year = cal.get(Calendar.YEAR);
-                model.addRow(new Object[]{res.getString(1), res.getString(2), res.getString(3), res.getString(4), year});
+                // Langsung ambil data tahun
+                int year = res.getInt("thn_terbit");
+                model.addRow(new Object[]{
+                    res.getString("kode_buku"),
+                    res.getString("judul_buku"),
+                    res.getString("penerbit"),
+                    res.getString("pengarang"),
+                    year
+                });
             }
             tb_buku.setModel(model);
         } catch (Exception e) {
+            e.printStackTrace(); // Tambahkan log untuk memantau error
         }
     }
+
     
     private void load_table_pegawai() {
         tb_pegawai.getTableHeader().setFont(new Font("Tahoma", Font.BOLD, 14));
@@ -1232,7 +1165,7 @@ public class mainMenu extends javax.swing.JFrame {
     }
 
     public void defaultcolor(javax.swing.JButton btn) {
-        btn.setBackground(new java.awt.Color(74, 209, 161));
+        btn.setBackground(new java.awt.Color(255, 153, 153));
     }
     
     
@@ -1242,7 +1175,7 @@ public class mainMenu extends javax.swing.JFrame {
     }
 
     public void resetcolor(javax.swing.JLabel lbl) {
-        lbl.setBackground(new java.awt.Color(74, 209, 161));
+        lbl.setBackground(new java.awt.Color(255, 153, 153));
     }
 
     public String ambiluser;
@@ -1366,15 +1299,8 @@ public class mainMenu extends javax.swing.JFrame {
     private javax.swing.JButton btn_refresh;
     private javax.swing.JButton btn_search;
     private javax.swing.JPanel buku;
-    private javax.swing.JPanel credits;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Unknown
+ * @author Pindo
  */
 public class pinjamForm extends javax.swing.JFrame {
 

@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Unknown
+ * @author Pindo
  */
 public class mahasiswaForm extends javax.swing.JFrame {
 
